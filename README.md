@@ -1,10 +1,15 @@
 This repository contains the source code of the web panel I have used in my book series of books: Cyber and Penetration Testing – Web Penetration Testing.
 
+Intro:
+---------------
+
 Link to the book: <!-- WILL BE UPDATED ONCE PUBLISHED !-->
+
+Screenshot:
+
 
 If you still want to use this panel and you don't have the book the setup steps are as following:
 
------------------
 Tools you will need to Download in order to solve the challenges:
 -----------------
 1. Burp Suit: https://portswigger.net/burp/communitydownload
@@ -12,7 +17,7 @@ Tools you will need to Download in order to solve the challenges:
 3. dirbuster: https://sourceforge.net/projects/dirbuster/
 4. python: https://www.python.org/downloads/
 
------------------
+
 Setup:
 -----------------
 1. Download xampp on your windows computer: https://www.apachefriends.org/download.html
