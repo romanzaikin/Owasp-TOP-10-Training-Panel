@@ -1,4 +1,4 @@
-This repository contains the source code of the web panel I have used in my book series of books: Cyber and Penetration Testing – Web Penetration Testing.
+#This repository contains the source code of the web panel I have used in my book series of books: Cyber and Penetration Testing – Web Penetration Testing.
 
 Intro:
 ---------------
@@ -6,9 +6,9 @@ Intro:
 Link to the book: <!-- WILL BE UPDATED ONCE PUBLISHED !-->
 
 Screenshot:
+![alt tag](https://raw.githubusercontent.com/romanzaikin/Owasp-TOP-10-Training-Panel/blob/master/panel.PNG)
 
-
-If you still want to use this panel and you don't have the book the setup steps are as following:
+If you still want to use this panel and you don't have the book, Here is the steps to to setup the panel:
 
 Tools you will need to Download in order to solve the challenges:
 -----------------
