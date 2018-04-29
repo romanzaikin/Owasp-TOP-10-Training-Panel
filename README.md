@@ -24,10 +24,15 @@ Setup:
 2. Move all the repository files to the folder: C:\xampp\htdocs
 3. Start xampp mysql and apache in the xampp software.
 4. Open your browser at htpp://127.0.0.1/phpmyadmin
+
 4.1. Press on the import tab
+
 4.1.1: import the SQL files:
+
 4.1.1.1: C:\xampp\htdocs\challenge\SQLI\sqli.sql
+
 4.1.1.2: C:\xampp\htdocs\forum\forum.sql
+
 4.1.2: press on go
 
 5. Open the challenge: http://127.0.0.1/challenge/
