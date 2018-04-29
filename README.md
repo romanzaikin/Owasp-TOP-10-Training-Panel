@@ -6,7 +6,7 @@ Intro:
 Link to the book: <!-- WILL BE UPDATED ONCE PUBLISHED !-->
 
 Screenshot:
-![alt tag](https://raw.githubusercontent.com/romanzaikin/Owasp-TOP-10-Training-Panel/blob/master/panel.PNG)
+![alt tag](https://raw.githubusercontent.com/romanzaikin/Owasp-TOP-10-Training-Panel/master/panel.PNG)
 
 If you still want to use this panel and you don't have the book, Here is the steps to to setup the panel:
 
