@@ -58,7 +58,7 @@
 				}
 			?>
 			<hr/>
-			<p><b>Rules: </b><kbd>Inject alert command.</kbd></p>
+			<p><b>Rules: </b><kbd>Run dir command.</kbd></p>
 		</div>
 	</div>
 </div>

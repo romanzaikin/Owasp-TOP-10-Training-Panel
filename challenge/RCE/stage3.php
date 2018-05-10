@@ -42,7 +42,7 @@
 				</b>
 				<center><input type="submit" class="btn btn-primary" id="search" value = "&larr; Go &rarr;" style="margin-top:20px;"/></center>
 				<hr/>
-				<p><b>Rules: </b><kbd>Inject alert command.</kbd></p>
+				<p><b>Rules: </b><kbd>Run dir command.</kbd></p>
 			</form>
 		</div>
 	</div>
