@@ -33,7 +33,7 @@ if(isset($_GET["name"]) && isset($_GET["age"]))
 		<div class="container">
 			<div class="nav-collapse collapse">
 				<ul class="nav">
-					<li class='active'><a class="brand " href="#" ><i class='icon-book'></i>Object Injection Challenges</a></li>
+					<li class='active'><a class="brand" href="../" ><i class='icon-book'></i>Object Injection Challenges</a></li>
 				</ul>
 				<ul class="nav pull-right">
 					<li class='active' style='margin-top:2px;'><a href="#" ><i class="icon-user"></i>&nbsp; Login &nbsp; </a></li>

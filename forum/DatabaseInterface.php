@@ -38,7 +38,7 @@ class DatabaseInterface
     {
         try
         {
-            $cursor = $this->MySQLdb->prepare("SELECT * FROM posts LIMIT 20");
+            $cursor = $this->MySQLdb->prepare("SELECT * FROM posts");
             $cursor->execute();
             $retval = "";
 
