@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AdminPanel - Download</title>
+    <title>AdminPanel - ITSafe</title>
     <link rel="stylesheet" type="text/css" href="./assets/css2/bootstrap.min.css" media="screen">
-    <script src="./assets/js2/jquery.js"></script>
+    <script src="./assets/js2/jquery.min.js"></script>
     <script src="./assets/js2/bootstrap.min.js"></script>
     <style> body { background-color: #f5f5f5; } </style>
 </head>
@@ -12,7 +12,7 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Challnges</a>
+                <a class="navbar-brand" href="#">Challnges Book System</a>
             </div>
         </div>
     </nav>
