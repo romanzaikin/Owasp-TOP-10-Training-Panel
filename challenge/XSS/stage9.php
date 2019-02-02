@@ -30,7 +30,7 @@
 			<b><span id='notification'></span></b>
 			<a href="./redirect.php?url=<?php echo (isset($_GET["callback"]) ? $_GET["callback"] : "stage9_real_challenge.php"); ?>">START</a>
 			<hr/>
-			<p><b>Rules: </b><kbd>insert in the url callback=stage11_real_challenge.php and press start</kbd></p>
+			<p><b>Rules: </b><kbd>insert in the url callback=stage9_real_challenge.php and press start</kbd></p>
 		</div>
 	</div>
 </div>

