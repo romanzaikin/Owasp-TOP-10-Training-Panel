@@ -5,16 +5,19 @@
     # 'Proxy' request header is undefined by the IETF, not listed by IANA
     #
     RequestHeader unset Proxy early
-	
+
     # CSP Header
-    # Header set Content-Security-Policy "default-src 'none'; script-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline';"
+    #Header set Content-Security-Policy "default-src 'none'; script-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline';"
     
-	# REPORT
-    # Header set X-XSS-Protection "1; report=http://127.0.0.1/XSS/report.php"
+    # XSS Auditor
+    #Header set X-XSS-Protection "0"
+    #Header set X-XSS-Protection "1; report=http://127.0.0.1/XSS/report.php"
     
-	# CORS
-    # Header set Access-Control-Allow-Origin "*"
-    
-	# ClickJAcking
-    # Header set X-Frame-Options "DENY"
+    # CORS
+    #Header set Access-Control-Allow-Origin "*"
+
+    # ClickJAcking
+    #Header set X-Frame-Options "DENY"
+    #Header set Content-Security-Policy "frame-ancestors 'none';"
+
 </IfModule>
