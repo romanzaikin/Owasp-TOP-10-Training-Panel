@@ -35,9 +35,7 @@
 				</pre>
 				<hr/>
 				<p>
-					<b>Rules: </b><kbd>LFI: load some system file</kbd>
-					<br/>
-					<b>Rules: </b><kbd>RFI: execute shell command</kbd>
+					<b>Rules: </b><kbd>LFI: try to read xampp/passwords.txt file</kbd>
 				</p>
 			</form>
 		</div>
@@ -48,7 +46,7 @@
 	var url_data = url.searchParams.get("file");
 	if (url_data === null)
 	{
-			window.location="/challenge/LFI&RFI/stage1.php?file=test.txt";
+			window.location="/challenge/LFI_RFI/stage1.php?file=test.txt";
 	}
 </script>
 </body>
