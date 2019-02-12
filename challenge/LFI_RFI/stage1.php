@@ -46,7 +46,7 @@
 	var url_data = url.searchParams.get("file");
 	if (url_data === null)
 	{
-			window.location="/challenge/LFI_RFI/stage1.php?file=test.txt";
+			window.location="stage1.php?file=test.txt";
 	}
 </script>
 </body>

@@ -46,9 +46,9 @@
                     <div class="panel-heading"><b>Local File Inclusion & Remote File Inclusion</b></div>
                     <div class="panel-body">
                         <div class="list-group">
-                            <a href="LFI_RFI/stage1.php" class="list-group-item">LFI STAGE 0x01 ( 1)</a>
-							<a href="LFI_RFI/stage2.php" class="list-group-item">RFI STAGE 0x02 ( 2)</a>
-							<a href="LFI_RFI/stage3.php" class="list-group-item">SSRF STAGE 0x03 ( 3)</a>
+                            <a href="LFI_RFI/stage1.php?file=test.txt" class="list-group-item">LFI STAGE 0x01 ( 1)</a>
+							<a href="LFI_RFI/stage2.php?file=test.txt" class="list-group-item">RFI STAGE 0x02 ( 2)</a>
+							<a href="LFI_RFI/stage3.php?file=test.txt" class="list-group-item">SSRF STAGE 0x03 ( 3)</a>
                         </div>
                     </div>
                 </div>
