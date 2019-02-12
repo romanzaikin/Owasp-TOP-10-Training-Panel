@@ -43,7 +43,7 @@
 				</pre>
 				<hr/>
 				<p>
-					<b>Rules: </b><kbd>SSRF: try to access "/challenge/LFI&RFI/tryme.php" on the local system and get the password of the right user</kbd>
+					<b>Rules: </b><kbd>SSRF: try to access "http://127.0.0.1/challenge/LFI_RFI/tryme.php" on the local system and get the password of the right user</kbd>
 				</p>
 			</form>
 		</div>
