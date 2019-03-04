@@ -1,0 +1,2 @@
+
+if(instr(substring(secret,1,1),char(53)),7,0)
