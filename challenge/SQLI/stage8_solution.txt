@@ -1,2 +1,2 @@
 
-if(instr(substring(secret,1,1),char(53)),7,0)
+if(instr(substring(secret,1,1),char(65)),3,0)

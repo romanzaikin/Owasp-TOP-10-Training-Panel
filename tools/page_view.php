@@ -2,7 +2,7 @@
 
 if (session_status() == PHP_SESSION_NONE) 
 {
-	session_start(); 							// copy all the data to $_SESSION parameter (account takeovr)
+	//session_start(); 							// copy all the data to $_SESSION parameter (account takeovr)
 		
 	if (isset($_GET["PHPSESSID"]))
 	{
@@ -10,7 +10,7 @@ if (session_status() == PHP_SESSION_NONE)
 		session_id($_GET["PHPSESSID"]);						// just change the session id nothing more
 	}
 	
-	//session_start(); 						    // session fixation
+	session_start(); 						    // session fixation
 	
 	if (!isset($_SESSION["page_view"]))
 	{
