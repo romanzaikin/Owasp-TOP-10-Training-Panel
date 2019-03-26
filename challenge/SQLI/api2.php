@@ -47,9 +47,9 @@
            {
                die(json_encode(array("data"=>"You are a real ninja! the secret is SQL_Injection Master_!")));
            }
-           elseif  ($cursor->fetch()["id"] == 7)
+           elseif  ($cursor->fetch()["id"] != 7)
            {
-               die(json_encode(array("data"=>"You on the right way")));
+               die(json_encode(array("data"=>"You on the right way, I told you id 7")));
            }
            else
            {

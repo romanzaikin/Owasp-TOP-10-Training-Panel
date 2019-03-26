@@ -31,7 +31,7 @@
                 <img class="img-responsive" id="cats_img" src="cats/1.jpg">
                 <hr/>
                 <p>
-				<b>Task 1: </b>get secret from cat id 5 by using <kbd><b>error based!</b></kbd> SQL Injection<br/>
+				<b>Task 1: </b>get secret from cat id 6 by using <kbd><b>error based!</b></kbd> SQL Injection<br/>
 				</p>
             </div>
         </div>
