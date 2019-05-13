@@ -3,7 +3,7 @@
 Intro:
 ---------------
 
-Link to the book: [WILL BE UPDATED ONCE PUBLISHED]
+Link to the book: https://www.amazon.com/dp/1096435497
 
 Screenshot:
 ![alt tag](https://raw.githubusercontent.com/romanzaikin/Owasp-TOP-10-Training-Panel/master/panel.PNG)
