@@ -33,7 +33,7 @@
                 <b><span id='notification'></span></b>
                 <center><input class="btn btn-primary" id="search" value = "&larr; Go &rarr;" style="margin-top:20px;"/></center>
                 <hr/>
-                <p><b>Task 1: </b><kbd>Dump all the database by using sqlmap</kbd></p>
+                <p><b>Task 1: </b><kbd>Dump all the database by using sqlmap, the perfix for username is "user_"</kbd></p>
             </div>
         </div>
 	</div>
@@ -51,7 +51,7 @@
         $.ajax({
             url: "api.php",
             type: "GET",
-            data: "username=user_"+username.value+"&password="+password.value,
+            data: "username="username.value+"&password="+password.value,
             success: function(data)
             {
 				if (isJson(data))
