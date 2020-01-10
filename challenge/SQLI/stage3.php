@@ -51,7 +51,7 @@
         $.ajax({
             url: "api.php",
             type: "GET",
-            data: "username="username.value+"&password="+password.value,
+            data: "username="+username.value+"&password="+password.value,
             success: function(data)
             {
 				if (isJson(data))
