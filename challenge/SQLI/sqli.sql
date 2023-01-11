@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 03, 2018 at 03:54 PM
+-- Generation Time: Mar 04, 2019 at 07:51 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.2
 
@@ -21,6 +21,35 @@ SET time_zone = "+00:00";
 --
 -- Database: `sqli`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cats`
+--
+
+CREATE TABLE `cats` (
+  `id` int(11) NOT NULL,
+  `path` varchar(10) NOT NULL,
+  `role` varchar(10) NOT NULL,
+  `secret` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `cats`
+--
+
+INSERT INTO `cats` (`id`, `path`, `role`, `secret`) VALUES
+(1, 'cats/1', 'user', 'I love fat cats'),
+(2, 'cats/2', 'user', 'I hate cats'),
+(3, 'cats/3', 'user', 'AND_THIS_WAS_A_CRAZY_BLIND_ONE'),
+(4, 'cats/4', 'user', 'There is a mouse'),
+(5, 'cats/5', 'admin', 'I_AM_YOUR_ADMIN_1337'),
+(6, 'cats/6', 'user', 'WHAT_AN_ERROR!'),
+(7, 'cats/7', 'user', 'SQL_Injection Master_!'),
+(8, 'cats/8', 'user', 'Meow Meow Meow'),
+(9, 'cats/9', 'user', 'I am a special agent'),
+(10, 'cats/10', 'user', 'I feed cats at 5 am !');
 
 -- --------------------------------------------------------
 
@@ -44,13 +73,19 @@ INSERT INTO `users` (`id`, `username`, `password`, `role`) VALUES
 (2, 'david', '123123', 'user'),
 (3, 'bubu', '123456Aa!', 'user'),
 (4, 'niki', 'QAZWSXEDC!', 'user'),
-(5, 'admin', '!QAZ@WSX#EDC', 'admin'),
+(5, 'admin', 'You_Got_My_Damn_Password', 'admin'),
 (6, 'boss', '!QAZ@WSX#EDC123123', 'admin'),
 (7, 'leet', '1337', 'nobody');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `cats`
+--
+ALTER TABLE `cats`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `users`
@@ -61,6 +96,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `cats`
+--
+ALTER TABLE `cats`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `users`
